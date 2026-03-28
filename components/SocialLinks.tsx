@@ -8,10 +8,10 @@ const SocialLinks = () => {
       {socialLinks.email && (
         <Button
           className="btn-icon-only rounded-circle ml-1"
-          color="white"
+          color="white" 
           rel="noopener"
           aria-label="URL"
-          href={socialLinks.url}
+          href={socialLinks.email}
           target="_blank"
         >
           <span className="btn-inner--icon">

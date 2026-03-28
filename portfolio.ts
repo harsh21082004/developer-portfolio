@@ -13,10 +13,10 @@ import {
 
 export const greetings: GreetingsType = {
   name: "Harsh Tiwari",
-  title: "Hi all, I'm Harshtiwari",
+  title: "Hi all, I'm Harsh Tiwari",
   description:
-    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
-  resumeLink: "#",
+    "Senior Full Stack & AI Engineer with a proven track record of architecting scalable web applications and integrating advanced Large Language Models. Specializing in high-performance MEAN/MERN systems, FastAPI microservices, and Agentic AI workflows (LangChain, LangGraph). Passionate about leading end-to-end development, optimizing system architectures, and bridging the gap between cutting-edge AI, robust cybersecurity, and exceptional user experiences.",
+  resumeLink: "/Harsh_Tiwari_Updated_Resume .pdf",
 };
 
 export const openSource = {
@@ -26,23 +26,24 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "harshtiwari.up2004@gmail.com",
+  email: "mailto:harshtiwari.up2004@gmail.com",
   linkedin: "https://www.linkedin.com/in/harsh-tiwari-745a85274",
   github: "https://github.com/harsh21082004",
-  instagram: "https://www.instagram.com/harshtiwari2108",
+  instagram: "https://www.instagram.com/harshtiwarishots",
 };
 
 export const skillsSection: SkillsSectionType = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "SENIOR SYSTEM ARCHITECT & AI ENGINEER EXPERT IN BUILDING HIGH-IMPACT, SCALABLE SOLUTIONS",
   data: [
     {
-      title: "Full Stack Development",
+      title: "Full Stack Development & AI Engineering",
       lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
-        emoji("⚡ Building responsive static websites using Next.js"),
-        emoji("⚡ Building RESTful APIs in Django & Django REST Framework"),
+        emoji("⚡ Designing robust RESTful APIs & microservices using Node.js, Express, and FastAPI"),
+        emoji("⚡ Integrating Large Language Models (Gemini, Groq, Ollama) via LangChain for context-aware conversations"),
+        emoji("⚡ Architecting advanced cybersecurity applications using Agentic AI frameworks like LangGraph"),
+        emoji("⚡ Building responsive user interfaces using React.js, Next.js, and Angular"),
       ],
       softwareSkills: [
         {
@@ -50,36 +51,44 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "logos:python",
         },
         {
-          skillName: "Django",
-          iconifyTag: "vscode-icons:file-type-django",
-        },
-        {
           skillName: "JavaScript",
           iconifyTag: "logos:javascript",
         },
         {
-          skillName: "Reactjs",
+          skillName: "TypeScript",
+          iconifyTag: "logos:typescript-icon",
+        },
+        {
+          skillName: "Next.js",
+          iconifyTag: "logos:nextjs-icon",
+        },
+        {
+          skillName: "React.js",
           iconifyTag: "vscode-icons:file-type-reactjs",
         },
         {
-          skillName: "Nextjs",
-          iconifyTag: "vscode-icons:file-type-light-next",
+          skillName: "Angular",
+          iconifyTag: "logos:angular-icon",
         },
         {
-          skillName: "AWS",
-          iconifyTag: "logos:aws",
+          skillName: "Node.js",
+          iconifyTag: "logos:nodejs-icon",
         },
         {
-          skillName: "Heroku",
-          iconifyTag: "logos:heroku-icon",
+          skillName: "FastAPI",
+          iconifyTag: "logos:fastapi",
         },
         {
-          skillName: "Github",
-          iconifyTag: "akar-icons:github-fill",
+          skillName: "MongoDB",
+          iconifyTag: "logos:mongodb-icon",
         },
         {
           skillName: "Docker",
           iconifyTag: "logos:docker-icon",
+        },
+        {
+          skillName: "AWS",
+          iconifyTag: "logos:aws",
         },
       ],
     },
@@ -89,103 +98,107 @@ export const skillsSection: SkillsSectionType = {
 export const SkillBars: SkillBarsType[] = [
   {
     Stack: "Frontend/Design",
-    progressPercentage: "85",
-  },
-  {
-    Stack: "Backend",
     progressPercentage: "90",
   },
   {
-    Stack: "Programming",
+    Stack: "Backend",
     progressPercentage: "95",
+  },
+  {
+    Stack: "AI & Cyber (Langchain, RAG)",
+    progressPercentage: "90",
   },
 ];
 
 export const educationInfo: EducationType[] = [
   {
     schoolName: "Raj Kumar Goel Institute of Technology",
-    subHeader: "Bachelor of Technology in Computer Science and Engineering(Artificial Intelligence and Machine Learning)",
-    duration: "November 2022 - Currently Pursuing",
-    desc: "",
+    subHeader: "B.Tech, CSE (AI & ML) - SGPA: 8.5",
+    duration: "Aug 2021 - 2025",
+    desc: "Active participant and competitor in university tech hackathons and competitive programming events.",
+    descBullets: [],
+  },
+  {
+    schoolName: "Gyanodaya Inter College",
+    subHeader: "Intermediate",
+    duration: "Apr 2019 - Mar 2021",
+    desc: "Percentage: 75.4%",
+    descBullets: [],
+  },
+  {
+    schoolName: "Gyanodaya Inter College",
+    subHeader: "High School",
+    duration: "Apr 2017 - Mar 2019",
+    desc: "Percentage: 79.8%",
     descBullets: [],
   },
 ];
 
 export const experience: ExperienceType[] = [
   {
-    role: "Django Developer Intern",
-    company: "Meganos Software",
-    companyLogo: "/img/icons/common/meganos.png",
-    date: "May 2024 - Present",
-    desc: "I crafted backends for diverse web apps, APIs, and WebSockets in e-commerce, podcasts, and property management. Managed server upkeep, deployments on Linux, Heroku, and AWS S3. Implemented PyTest for automated unit and integration testing, slashing 4 hours of manual testing each sprint, fortifying a dependable and flawless code foundation.",
+    role: "Software Developer",
+    company: "AKSIT Services Pvt. Ltd.",
+    companyLogo: "/aksit.jpg",
+    date: "Feb 2026 – Present",
+    desc: "Spearheading the engineering and optimization of full-stack security tools utilizing scalable tech stacks. Architecting advanced RESTful APIs and distributed microservices using Node.js, Express.js, and FastAPI. Leading cross-functional collaboration on responsive, state-of-the-art user interfaces with React.js.",
+    background: "transparent"
   },
   {
-    role: "Full Stack Developer Intern",
-    company: "Duseca Software",
-    companyLogo: "/img/icons/common/duseca_software_logo.jpeg",
-    date: "Jan 2023 - Sept 2023",
-    desc: "Crafted robust mobile application backends employing Django, Python, and REST APIs. Leveraged Django REST Framework, PostgreSQL, AWS, Firebase, Stripe, and WebSocket for efficient development. Collaborated across teams to surpass client expectations. Designed intuitive UIs, empowering clients to effortlessly manage their applications with a visually captivating interface.",
-  },
-  {
-    role: "Full Stack Developer Intern",
-    company: "ZRTechnologies",
-    companyLogo: "/img/icons/common/zrtech.jpeg",
-    date: "Aug 2023 - Sep 2023",
-    desc: "Crafting diverse web applications, I've elevated functionality and user engagement. Spearheaded Visual Portfolio, leveraging AI for captivating presentations from parsed text. Proficiently set up and optimized applications on Linux servers, guaranteeing smooth scalability and top-notch performance for seamless user experiences.",
-  },
-  {
-    role: "Backend Developer Intern",
-    company: "Bleed-AI",
-    companyLogo: "/img/icons/common/bleedAI.jpg",
-    date: "Sept 2023 - Oct 2023",
-    desc: "As a Django developer at Bleed AI, I integrated a computer vision AI model to process YouTube URLs on a website. I used Django Channels and Websockets to show real-time processing and implemented threading to run multiple instances of the AI model. I also used jQuery for UI rendering and deployed the website on a Heroku server.",
+    role: "Software Engineer",
+    company: "SpendWise",
+    companyLogo: "https://www.spendwise.co.in/images/logo-transparent.png", 
+    date: "Apr 2024 – Jul 2024",
+    desc: "Architected 'BAE,' a high-performance Solana-based social app, integrating Phantom Wallet for automated crypto-rewards processing. Designed secure OAuth 2.0 authentication architecture via Passport.js, successfully reducing sign-up latency by 60% and drop-off rates by 15%. Engineered extensive frontend optimizations with React.js, improving vital page load speeds by over 300ms.",
+    background: "black"
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: "developer-portfolio",
-    desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-    github: "https://github.com/harsh21082004/developer-portfolio",
-    link: "https://harsh-developer-portfolio.vercel.app/",
+    name: "Aegis (Agentic Red Teaming)",
+    desc: "Architecting an advanced cybersecurity application leveraging agentic AI workflows for automated threat modeling and pentesting. Integrating autonomous AI agents to intelligently navigate, analyze, and report on system vulnerabilities in real-time.",
+    github: "#", 
+    link: "", 
   },
   {
-    name: "Full Stack Documentaion Website",
-    desc: "A Full Stack Documentation Website built with Next.js, Tailwind CSS, and Markdown that helps you showcase your work and skills as a software developer.",
-    github:"https://github.com/harsh21082004/test3",
-    link: "https://test3.codebyte.vercel.app/",
+    name: "Gwen (Intelligent AI Chatbot)",
+    desc: "Architected an Agentic AI platform with an Angular frontend (NgRx) and a FastAPI backend for asynchronous processing. Integrated cloud and local LLMs (Groq, Gemini, Ollama) using LangChain for context-aware, low-latency conversations. Deployed a dual-authentication system combining Passport.js and custom JWT strategies.",
+    github: "https://github.com/harsh21082004/Gwen",
+    link: "",
+  },
+  {
+    name: "Synergize AI",
+    desc: "Engineered an AI-driven collaborative workspace integrating React.js with Python microservices for advanced data processing. Deployed Large Language Models utilizing LangChain to automate summarization, streamline workflows, and boost productivity.",
+    github: "https://github.com/harsh21082004/Chat-App",
+    link: "",
+  },
+  {
+    name: "ERP Management System",
+    desc: "Architected a comprehensive MERN-based ERP solution for educational institutions to streamline administrative workflows. Implemented Role-Based Access Control (RBAC) middleware, ensuring data integrity across Admin, Faculty, and Student portals.",
+    github: "https://github.com/harsh21082004/erp",
+    link: "",
   },
 ];
 
-export const feedbacks: FeedbackType[] = [
-  {
-    name: "Varun Kumar Gupta",
-    role: "Student at Raj Kumar Goel Institute of Technology",
-    feedback:
-      "You were a wonderful addition to our team. I'm quite impressed with your abilities and professional practices. You approach problems from a unique perspective and always ask the right question. Finding a good teammate like Harsh is extremely difficult. He has contributed to the growth of our organization and continues to do so. I wish you all the best for your future endeavors.",
-  },
-  {
-    name: "Vishal Tiwari",
-    role: "Student at Raj Kumar Goel Institute of Technology",
-    feedback:
-      "Harsh has a deep understanding of web development technologies and is adept at using them to build scalable, robust, and secure web applications. He has worked on various projects, ranging from small-scale to large-scale, and has shown his ability to work collaboratively with others while maintaining a high level of productivity and quality. Harsh is a pleasure to work with, and I have no doubt that he will be an asset to any team or organization. I highly recommend Harsh for any Full Stack Django, React.js, or Blockchain development projects, and I wish him all the best in his future endeavors.",
-  },
-];
+export const feedbacks: FeedbackType[] = [];
 
-// See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: "Harsh Tiwari",
+  title: "Harsh Tiwari | Full Stack & AI Engineer",
   description: greetings.description,
   author: "Harsh Tiwari",
   image: "https://avatars.githubusercontent.com/u/131223935?v=4",
-  url: "https://developer-portfolio-1hanzla100.vercel.app",
+  url: "https://github.com/harsh21082004", 
   keywords: [
-    "Harshtiwari",
     "Harsh Tiwari",
-    "@1hanzla100",
-    "1hanzla100",
-    "Portfolio",
-    "Hanzla Portfolio ",
-    "Harsh Tiwari Portfolio",
+    "Full Stack Developer",
+    "AI Engineer",
+    "Python",
+    "React",
+    "Next.js",
+    "Langchain",
+    "Agentic AI",
+    "Software Engineer",
+    "Web Developer",
+    "portfolio",
   ],
 };

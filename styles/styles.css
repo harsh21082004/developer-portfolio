@@ -1,3 +1,122 @@
 body > div:first-child {
   overflow-x: hidden;
 }
+
+/* Custom Interactive UI Enhancements */
+.interactive-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.interactive-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 40px rgba(0, 195, 255, 0.1);
+  border-color: rgba(0, 195, 255, 0.3);
+  z-index: 2;
+}
+
+.interactive-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  transition: all 0.7s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.interactive-card:hover::before {
+  left: 150%;
+}
+
+.interactive-title {
+  background: linear-gradient(90deg, #11cdef 0%, #1171ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 800;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Dark Mode Styles --- */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span.nav-link-inner--text {
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .interactive-card {
+  background-color: #1e1e1e !important;
+  border-color: #333 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .interactive-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 195, 255, 0.2) !important;
+}
+
+body.dark-mode .navbar-main {
+  background-color: rgba(18, 18, 18, 0.95) !important;
+}
+
+body.dark-mode .bg-gradient-info,
+body.dark-mode .bg-info {
+  background: linear-gradient(87deg, #090909 0, #141414 100%) !important;
+}
+
+body.dark-mode .text-info {
+  color: #11cdef !important;
+}
+
+body.dark-mode .fill-white {
+  fill: #121212 !important;
+}
+
+body.dark-mode .icon-shape {
+  background: #2a2a2a !important;
+  color: #fff !important;
+}
+
+/* Mobile Navbar Dark Mode Fixes */
+@media (max-width: 991px) {
+  body.dark-mode .navbar-collapse {
+    background: #1e1e1e !important;
+  }
+  body.dark-mode .navbar-collapse .navbar-collapse-header {
+    border-bottom-color: #333 !important;
+  }
+  body.dark-mode .navbar-collapse .collapse-brand h3 {
+    color: #fff !important;
+  }
+  body.dark-mode .navbar-collapse .collapse-close button::before,
+  body.dark-mode .navbar-collapse .collapse-close button::after {
+    background-color: #fff !important;
+  }
+}

@@ -1,10 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { greetings, socialLinks } from "../portfolio";
 import Headroom from "headroom.js";
-import { UncontrolledCollapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container, Row, Col } from "reactstrap";
+import { UncontrolledCollapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, Container, Row, Col, Button } from "reactstrap";
 
 const Navigation = () => {
   const [collapseClasses, setCollapseClasses] = useState("");
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setIsDark(true);
+      document.body.classList.add("dark-mode");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    if (isDark) {
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+      setIsDark(false);
+    } else {
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+      setIsDark(true);
+    }
+  };
+
   const onExiting = () => setCollapseClasses("collapsing-out");
 
   const onExited = () => setCollapseClasses("");
@@ -51,6 +73,37 @@ const Navigation = () => {
                 </Row>
               </div>
               <Nav className="align-items-lg-center ml-lg-auto" navbar>
+                <NavItem>
+                  <NavLink href="#skills">
+                    <span className="nav-link-inner--text font-weight-bold">Skills</span>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#education">
+                    <span className="nav-link-inner--text font-weight-bold">Education</span>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#experience">
+                    <span className="nav-link-inner--text font-weight-bold">Experience</span>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#projects">
+                    <span className="nav-link-inner--text font-weight-bold">Projects</span>
+                  </NavLink>
+                </NavItem>
+                
+                <NavItem>
+                  <NavLink
+                    style={{ cursor: "pointer" }}
+                    onClick={toggleTheme}
+                  >
+                    <i className={isDark ? "fa fa-sun-o" : "fa fa-moon-o"} style={{ fontSize: "1.2rem" }} />
+                    <span className="nav-link-inner--text d-lg-none ml-2">Theme</span>
+                  </NavLink>
+                </NavItem>
+
                 {socialLinks.facebook && (
                   <NavItem>
                     <NavLink

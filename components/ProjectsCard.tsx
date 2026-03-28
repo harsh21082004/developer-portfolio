@@ -6,11 +6,11 @@ import { ProjectType } from "../types/sections";
 const ProjectsCard = ({ name, desc, github, link }: ProjectType) => {
   return (
     <Col lg="6">
-      <Card className="shadow-lg--hover shadow mt-4">
+      <Card className="interactive-card shadow-lg--hover shadow mt-4">
         <CardBody>
           <div className="d-flex px-3">
             <div className="pl-4">
-              <h3>{name}</h3>
+              <h3 className="interactive-title">{name}</h3>
               <p className="description mt-3">{desc}</p>
               {github ? (
                 <Button

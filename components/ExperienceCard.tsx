@@ -3,10 +3,10 @@ import { Card, CardBody, CardTitle, CardSubtitle, CardText, Col } from "reactstr
 import Fade from "react-reveal/Fade";
 import { ExperienceType } from "../types/sections";
 
-const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }: ExperienceType) => {
+const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets, background }: ExperienceType) => {
   return (
     <Col lg="6">
-      <Card style={{ flex: 1 }} className="shadow-lg--hover my-4 shadow border-0 text-center rounded h-100">
+      <Card style={{ flex: 1 }} className="interactive-card shadow-lg--hover my-4 shadow border-0 text-center rounded h-100">
         <CardBody className="">
           <img
             src={companyLogo}
@@ -20,6 +20,7 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
               width: "8rem",
               height: "8rem",
               borderRadius: "50%",
+              background: background
             }}
             className="shadow mb-3"
             alt={companyLogo}

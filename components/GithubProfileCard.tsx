@@ -5,7 +5,7 @@ import SocialLinks from "./SocialLinks";
 
 const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
   return (
-    <Card className="section-lg bg-gradient-info shadow-lg border-0">
+    <Card className="interactive-card section-lg bg-gradient-info shadow-lg border-0">
       <Container className="">
         <div className="p-2">
           <Row className="">
@@ -23,7 +23,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
               <p className="text-white mt-3">{bio}</p>
               <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
                 <i className="ni ni-pin-3 text-info mr-2" />
-                {location}
+                Noida, India
               </div>
               <SocialLinks />
             </Col>

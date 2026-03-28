@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     skillsSection && (
       <Fade bottom duration={2000}>
-        <Container className="text-center my-5 section section-lg">
+        <Container className="text-center my-5 section section-lg" id="skills">
           <h1 className="h1">{skillsSection.title}</h1>
           <p className="lead">{skillsSection.subTitle}</p>
           {skillsSection.data.map((section, index) => {
@@ -26,11 +26,11 @@ const Skills = () => {
                         <Fragment key={i}>
                           <div
                             className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
-                            id={skill.skillName.replace(/\s/g, "")}
+                            id={skill.skillName.replace(/[^a-zA-Z0-9]/g, "")}
                           >
                             <Icon icon={skill.iconifyTag} data-inline="false"></Icon>
                           </div>
-                          <UncontrolledTooltip delay={0} placement="bottom" target={skill.skillName.replace(/\s/g, "")}>
+                          <UncontrolledTooltip delay={0} placement="bottom" target={skill.skillName.replace(/[^a-zA-Z0-9]/g, "")}>
                             {skill.skillName}
                           </UncontrolledTooltip>
                         </Fragment>
