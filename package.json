@@ -4,7 +4,7 @@
   "description": "Harsh Tiwari Software Developer Portfolio",
   "main": "index.js",
   "author": "Harsh Tiwari",
-  "license": "AKSIT",
+  "license": "",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
